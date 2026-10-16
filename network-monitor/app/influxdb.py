@@ -29,7 +29,7 @@ def write_to_influxdb(data):
     """
     Write experiment result data to InfluxDB with correct units.
 
-    - Jitter: Convert from seconds to milliseconds (ms)
+    - Jitter: Already in milliseconds (ms) (no conversion needed)
     - Packet Loss: Already in percentage (%) (DO NOT multiply by 100)
     - Throughput: Already in Mbps (no conversion needed)
     - Timestamp: Convert from seconds to nanoseconds
@@ -61,9 +61,9 @@ def write_to_influxdb(data):
                     try:
                         timestamp_ns = int(float(entry["timestamp"]) * 1e9)
 
-                        jitter_ms = round(float(entry["jitter"]) * 1000, 3)
+                        jitter_ms = round(float(entry["jitter"]), 3)
 
-                        packet_loss_percent = round(float(entry["packetLoss"]) * 100, 3) 
+                        packet_loss_percent = round(float(entry["packetLoss"]), 3)
 
                         throughput_mbps = round(float(entry["throughput"]), 2)
 

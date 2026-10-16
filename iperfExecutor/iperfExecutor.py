@@ -152,12 +152,14 @@ class iPerf:
             process = subprocess.Popen(params, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
             cls.processPID = process.pid
 
+            port = params[params.index('-p') + 1] if '-p' in params else 'default'
+
             if '-c' in params:
                 cls.isServer = False
-                print('Client running')
+                print(f'iPerf3 client started (target port {port})')
             else:
                 cls.isServer = True
-                print('Server running')
+                print(f'iPerf3 server started (port {port})')
 
             cls.stdout(process)
             process.wait()
@@ -173,6 +175,6 @@ class iPerf:
             cls.isRunning = False
 
         if not cls.isServer:
-            print('Client finished')
+            print('iPerf3 client finished')
         else:
-            print('Server finished')
+            print('iPerf3 server finished')

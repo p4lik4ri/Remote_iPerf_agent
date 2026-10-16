@@ -79,32 +79,37 @@ def split_host_port(address: str) -> tuple:
     return host, (port or None)
 
 
+# iPerf3's own conventional default port. "server_ip"/"client_ip" are
+# the Flask control API's address (commonly port 5000), which iPerf3
+# can't also share for its test traffic (it always opens a TCP control
+# channel first, even for UDP tests, so reusing the same port would
+# conflict with Flask's own listener). This is used as the iPerf test
+# port whenever "server_params" doesn't set "-p" explicitly.
+DEFAULT_IPERF_PORT = "5201"
+
+
 def apply_server_target(server_params: str, client_params: str,
                          server_ip: str) -> tuple:
     """
     Business logic: "server_ip" is the single source of truth for where
     the iPerf test itself runs, so callers never need to repeat its
-    host/port again inside server_params/client_params. This derives
-    the host from "server_ip" and always sets it as "-c" in
-    client_params. The port is resolved once (an explicit "-p" already
-    in server_params wins, otherwise the port embedded in "server_ip"
-    is used) and applied identically to both server_params and
-    client_params, so the two sides can never end up with mismatched
-    ports.
+    host again inside server_params/client_params. This derives the
+    host from "server_ip" and always sets it as "-c" in client_params.
+    The port is resolved once (an explicit "-p" already in
+    server_params wins, otherwise DEFAULT_IPERF_PORT is used) and
+    applied identically to both server_params and client_params, so the
+    two sides can never end up with mismatched ports.
     """
-    host, ip_port = split_host_port(server_ip)
+    host, _ = split_host_port(server_ip)
 
     server_dict = parse_input_string(server_params)
     client_dict = parse_input_string(client_params)
 
-    port = server_dict.get("-p") or ip_port
-
-    if port:
-        server_dict["-p"] = port
+    port = server_dict.get("-p") or DEFAULT_IPERF_PORT
+    server_dict["-p"] = port
 
     client_dict["-c"] = host
-    if port:
-        client_dict["-p"] = port
+    client_dict["-p"] = port
 
     return (params_dict_to_string(server_dict),
             params_dict_to_string(client_dict))
