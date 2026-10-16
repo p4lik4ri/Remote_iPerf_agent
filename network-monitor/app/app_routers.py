@@ -101,7 +101,8 @@ async def start_experiment(experiment_data: utils.ExperimentData):
                 experiment_data.duration)
             await asyncio.sleep(experiment_duration)
 
-            result = await wait_for_results(results_host)
+            result = await wait_for_results(
+                results_host, max_wait=max(40, experiment_data.duration))
             results.append(result)
 
             # Persist and push to InfluxDB immediately after each repeat,
@@ -137,9 +138,21 @@ async def close_iperf(host: str):
 
 
 # Add this helper function for waiting until results are ready
-async def wait_for_results(server_a_ip: str):
-    """Wait until iPerf finishes and the results are ready."""
-    for _ in range(10):  # Try 10 times with a 2-second interval
+async def wait_for_results(server_a_ip: str, max_wait: int = 40):
+    """
+    Wait until iPerf finishes and the results are ready.
+
+    iPerf2's server-side "-t" timer only starts counting once the first
+    flow actually begins, not when the server process itself launches.
+    Any delay before the client's first packet arrives (network RTT,
+    OS/process scheduling, etc.) pushes the server's real completion
+    time out by the same amount, so the retry budget here is generous
+    and independent of the experiment's own "duration" to avoid
+    declaring a false timeout while the test is still legitimately
+    finishing up.
+    """
+    retries = max(max_wait // 2, 1)
+    for _ in range(retries):  # Retry every 2 seconds up to max_wait total
         async with httpx.AsyncClient(timeout=20) as client:
             response = await client.get(
                 f"http://{server_a_ip}/LastJsonResult")
