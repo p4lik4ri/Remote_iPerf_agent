@@ -1,0 +1,26 @@
+2024-12-13:12:24:40,717 INFO     [main.py:10] **iPerf network performance orchestrator started**
+2024-12-13:12:24:53,176 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2024-12-13:12:26:18,739 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2024-12-13:12:26:18,827 INFO     [app_routers.py:62] Client Conf: {'-b': '1G', '-i': 1, '-t': 8, '-u': '', '-c': '172.18.0.2:5000'}
+2024-12-13:12:31:51,787 INFO     [main.py:10] **iPerf network performance orchestrator started**
+2024-12-13:12:33:47,590 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2024-12-13:12:33:47,690 INFO     [app_routers.py:62] Client Conf: {'-b': '1G', '-i': 1, '-t': 8, '-u': '', '-c': '172.18.0.2:5000'}
+2024-12-13:12:37:30,571 INFO     [main.py:10] **iPerf network performance orchestrator started**
+2024-12-13:12:47:36,593 INFO     [main.py:10] **iPerf network performance orchestrator started**
+2024-12-13:12:47:45,589 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2024-12-13:12:47:45,677 INFO     [app_routers.py:62] Client Conf: {'-b': '1G', '-i': 1, '-t': 8, '-u': '', '-c': '172.18.0.2:5000'}
+2024-12-13:12:49:14,919 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2024-12-13:12:49:15,009 INFO     [app_routers.py:62] Client Conf: {'-b': '500M', '-i': 1, '-t': 8, '-u': '', '-c': '172.18.0.2:5000'}
+2024-12-13:12:50:03,140 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2024-12-13:12:50:03,224 INFO     [app_routers.py:62] Client Conf: {'-b': '50M', '-i': 1, '-t': 8, '-u': '', '-c': '172.18.0.2:5000'}
+2024-12-13:12:52:39,476 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 15, '-u': '', '-s': ''}
+2024-12-13:12:52:39,564 INFO     [app_routers.py:62] Client Conf: {'-b': '300M', '-i': 1, '-t': 13, '-u': '', '-c': '172.18.0.2:5000'}
+2024-12-13:12:54:31,447 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 15, '-u': '', '-s': ''}
+2024-12-13:12:54:31,529 INFO     [app_routers.py:62] Client Conf: {'-b': '5G', '-i': 1, '-t': 13, '-u': '', '-c': '172.18.0.2:5000'}
+2024-12-13:12:58:02,887 INFO     [main.py:11] **iPerf network performance orchestrator started**
+2024-12-13:12:58:11,699 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 15, '-u': '', '-s': ''}
+2024-12-13:12:58:11,787 INFO     [app_routers.py:62] Client Conf: {'-b': '5G', '-i': 1, '-t': 13, '-u': '', '-c': '172.18.0.2:5000'}
+2024-12-13:12:59:54,524 INFO     [main.py:11] **iPerf network performance orchestrator started**
+2024-12-13:13:06:08,255 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2024-12-13:13:07:05,701 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 15, '-u': '', '-s': ''}
+2024-12-13:13:07:05,790 INFO     [app_routers.py:62] Client Conf: {'-b': '2G', '-i': 1, '-t': 13, '-u': '', '-c': '172.18.0.2:5000'}

@@ -1,0 +1,526 @@
+2025-02-11:12:46:56,506 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:46:57,584 ERROR    [influxdb.py:49] Error writing to InfluxDB: <urllib3.connection.HTTPConnection object at 0x7ff1e934eb30>: Failed to resolve 'influxdb' ([Errno -2] Name or service not known)
+2025-02-11:12:47:16,633 ERROR    [influxdb.py:49] Error writing to InfluxDB: <urllib3.connection.HTTPConnection object at 0x7ff1e934dc00>: Failed to resolve 'influxdb' ([Errno -2] Name or service not known)
+2025-02-11:12:52:15,308 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:52:15,311 ERROR    [influxdb.py:22] Error fetching results: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /get-all-results (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f53bca8c400>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-02-11:12:52:33,396 ERROR    [influxdb.py:49] Error writing to InfluxDB: (422)
+Reason: Unprocessable Entity
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'X-Influxdb-Build': 'OSS', 'X-Influxdb-Version': 'v2.7.11', 'X-Platform-Error-Code': 'unprocessable entity', 'Date': 'Tue, 11 Feb 2025 10:52:33 GMT', 'Content-Length': '135'})
+HTTP response body: {"code":"unprocessable entity","message":"failure writing points to database: partial write: points beyond retention policy dropped=1"}
+
+2025-02-11:12:57:49,475 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:57:49,478 ERROR    [influxdb.py:22] Error fetching results: HTTPConnectionPool(host='localhost', port=8000): Max retries exceeded with url: /get-all-results (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fcf149484c0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-02-11:12:58:07,553 ERROR    [influxdb.py:49] Error writing to InfluxDB: (422)
+Reason: Unprocessable Entity
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'X-Influxdb-Build': 'OSS', 'X-Influxdb-Version': 'v2.7.11', 'X-Platform-Error-Code': 'unprocessable entity', 'Date': 'Tue, 11 Feb 2025 10:58:07 GMT', 'Content-Length': '135'})
+HTTP response body: {"code":"unprocessable entity","message":"failure writing points to database: partial write: points beyond retention policy dropped=1"}
+
+2025-02-11:12:58:25,415 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:12:58:25,537 INFO     [app_routers.py:62] Client Conf: {'-b': '5M', '-i': 1, '-t': 8, '-u': '', '-c': 'localhost'}
+2025-02-11:12:58:25,572 ERROR    [influxdb.py:49] Error writing to InfluxDB: (422)
+Reason: Unprocessable Entity
+HTTP response headers: HTTPHeaderDict({'Content-Type': 'application/json; charset=utf-8', 'X-Influxdb-Build': 'OSS', 'X-Influxdb-Version': 'v2.7.11', 'X-Platform-Error-Code': 'unprocessable entity', 'Date': 'Tue, 11 Feb 2025 10:58:25 GMT', 'Content-Length': '135'})
+HTTP response body: {"code":"unprocessable entity","message":"failure writing points to database: partial write: points beyond retention policy dropped=1"}
+
+2025-02-11:12:58:43,585 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:12:59:01,605 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:12:59:19,625 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:12:59:37,647 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:12:59:55,669 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:00:13,695 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:00:17,684 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:13:00:17,772 INFO     [app_routers.py:62] Client Conf: {'-b': '5M', '-i': 1, '-t': 8, '-u': '', '-c': 'localhost:5000'}
+2025-02-11:13:00:31,708 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:00:49,733 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:01:07,759 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:01:25,783 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:01:43,807 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:02:01,831 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:02:19,856 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:02:37,882 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:02:55,909 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:03:13,934 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:03:31,961 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:03:49,986 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:04:08,009 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:04:26,032 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:04:44,055 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:05:02,077 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:05:20,098 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:05:38,121 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:05:56,144 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:06:14,171 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:06:32,204 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:06:50,226 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:07:08,233 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:07:26,256 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:07:44,278 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:08:02,297 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:08:20,315 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:08:38,336 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:08:56,357 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:09:14,375 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:09:32,397 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:09:50,418 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:10:08,441 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:10:26,464 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:10:44,485 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:11:02,509 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:11:20,526 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:11:38,550 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:11:56,572 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:30:56,099 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:11:31:21,472 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:11:31:21,479 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:31:38,722 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:11:31:38,722 INFO     [main.py:13] **hi**
+2025-02-11:11:31:38,730 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:31:49,907 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:11:31:49,915 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:32:03,223 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:11:32:03,262 INFO     [app_routers.py:62] Client Conf: {'-b': '1G', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:11:32:07,938 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:32:26,000 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:32:44,064 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:32:52,907 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:11:32:52,936 INFO     [app_routers.py:62] Client Conf: {'-b': '50M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:11:33:02,140 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:33:20,195 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:33:38,270 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:33:56,858 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:34:14,927 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:34:32,998 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:34:51,073 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:35:09,148 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:35:27,224 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:35:45,295 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:36:03,351 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:36:21,411 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:36:39,463 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:36:57,529 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:37:15,590 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:37:33,648 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:37:51,703 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:38:09,768 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:38:27,830 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:38:45,901 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:39:03,976 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:39:22,044 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:39:40,107 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:39:58,186 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:40:16,254 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:40:34,323 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:40:52,396 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:41:10,451 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:41:28,514 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:41:46,560 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:42:04,691 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:42:22,758 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:42:28,077 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:11:42:28,136 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:42:46,200 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:45:04,604 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:11:45:04,679 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:45:22,751 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:45:40,805 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:45:58,862 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:46:16,920 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:46:34,995 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:46:53,107 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:47:11,166 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:47:29,246 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:47:47,401 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:48:05,501 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:48:23,692 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:48:41,841 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:48:59,902 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:49:17,971 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:49:30,692 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:11:49:30,762 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:49:48,828 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:50:06,906 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:50:24,972 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:50:43,039 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:51:01,113 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:51:19,198 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:51:37,264 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:51:55,327 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:52:13,389 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:52:31,457 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:52:49,522 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:11:52:52,988 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:06:25,337 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:06:42,838 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:06:48,811 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:12:06:48,853 INFO     [app_routers.py:62] Client Conf: {'-b': '50M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:12:07:03,036 INFO     [influxdb.py:60] Data written to InfluxDB successfully.
+2025-02-11:12:07:51,144 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:12:07:51,180 INFO     [app_routers.py:62] Client Conf: {'-b': '50M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:12:08:05,205 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:12:08:05,233 INFO     [app_routers.py:62] Client Conf: {'-b': '50M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:12:08:19,259 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:12:08:19,286 INFO     [app_routers.py:62] Client Conf: {'-b': '50M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:12:08:33,443 INFO     [influxdb.py:60] Data written to InfluxDB successfully.
+2025-02-11:12:09:44,595 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:09:53,419 INFO     [app_routers.py:46] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:12:09:53,462 INFO     [app_routers.py:62] Client Conf: {'-b': '50M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:12:10:32,594 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:10:47,701 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:13:19,256 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:13:31,170 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:12:13:31,212 INFO     [app_routers.py:63] Client Conf: {'-b': '50M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:12:13:45,275 INFO     [influxdb.py:60] Data written to InfluxDB successfully.
+2025-02-11:12:15:02,443 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:16:52,037 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:16:55,333 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:12:16:55,370 INFO     [app_routers.py:63] Client Conf: {'-b': '50M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:12:17:09,393 INFO     [app_routers.py:86] Experiment results to write: [{'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.002', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739276215.357085}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739276216.357085}, {'jitter': '0.008', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739276217.357085}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739276218.357085}, {'jitter': '0.008', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739276219.357085}, {'jitter': '0.006', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739276220.357085}, {'jitter': '0.003', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739276221.357085}, {'jitter': '0.012', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739276222.357085}], 'Status': 'Success'}]
+2025-02-11:12:17:09,430 INFO     [influxdb.py:60] Data written to InfluxDB successfully.
+2025-02-11:12:17:44,589 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:18:01,522 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:12:18:01,564 INFO     [app_routers.py:63] Client Conf: {'-b': '50M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:12:18:15,624 INFO     [influxdb.py:60] Data written to InfluxDB successfully.
+2025-02-11:12:20:16,591 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:12:20:16,623 INFO     [app_routers.py:63] Client Conf: {'-b': '50M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:12:20:30,650 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:12:20:30,677 INFO     [app_routers.py:63] Client Conf: {'-b': '50M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:12:20:44,762 INFO     [influxdb.py:60] Data written to InfluxDB successfully.
+2025-02-11:12:22:57,438 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:23:12,967 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:12:23:13,009 INFO     [app_routers.py:63] Client Conf: {'-b': '124M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:12:23:27,034 INFO     [influxdb.py:44] Attempting to write data to InfluxDB: {'results': [{'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276592.994788}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276593.994788}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276594.994788}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276595.994788}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276596.994788}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276597.994788}, {'jitter': '0.008', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276598.994788}, {'jitter': '0.006', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276599.994788}], 'Status': 'Success'}]}
+2025-02-11:12:23:27,034 INFO     [influxdb.py:46] Processing result: {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276592.994788}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276593.994788}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276594.994788}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276595.994788}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276596.994788}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276597.994788}, {'jitter': '0.008', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276598.994788}, {'jitter': '0.006', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276599.994788}], 'Status': 'Success'}
+2025-02-11:12:23:27,034 INFO     [influxdb.py:50] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276592.994788}
+2025-02-11:12:23:27,043 INFO     [influxdb.py:68] Wrote point: network_metrics jitter_ms=0,packetLoss_percent=0,throughput_Mbps=0 1739276592994787840
+2025-02-11:12:23:27,043 INFO     [influxdb.py:50] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276593.994788}
+2025-02-11:12:23:27,049 INFO     [influxdb.py:68] Wrote point: network_metrics jitter_ms=0,packetLoss_percent=0,throughput_Mbps=0 1739276593994787840
+2025-02-11:12:23:27,049 INFO     [influxdb.py:50] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276594.994788}
+2025-02-11:12:23:27,055 INFO     [influxdb.py:68] Wrote point: network_metrics jitter_ms=0,packetLoss_percent=0,throughput_Mbps=0 1739276594994787840
+2025-02-11:12:23:27,055 INFO     [influxdb.py:50] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276595.994788}
+2025-02-11:12:23:27,060 INFO     [influxdb.py:68] Wrote point: network_metrics jitter_ms=0,packetLoss_percent=0,throughput_Mbps=0 1739276595994787840
+2025-02-11:12:23:27,061 INFO     [influxdb.py:50] Processing entry: {'jitter': '0.002', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276596.994788}
+2025-02-11:12:23:27,066 INFO     [influxdb.py:68] Wrote point: network_metrics jitter_ms=0,packetLoss_percent=0,throughput_Mbps=0 1739276596994787840
+2025-02-11:12:23:27,066 INFO     [influxdb.py:50] Processing entry: {'jitter': '0.002', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276597.994788}
+2025-02-11:12:23:27,071 INFO     [influxdb.py:68] Wrote point: network_metrics jitter_ms=0,packetLoss_percent=0,throughput_Mbps=0 1739276597994787840
+2025-02-11:12:23:27,071 INFO     [influxdb.py:50] Processing entry: {'jitter': '0.008', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276598.994788}
+2025-02-11:12:23:27,077 INFO     [influxdb.py:68] Wrote point: network_metrics jitter_ms=0.01,packetLoss_percent=0,throughput_Mbps=0 1739276598994787840
+2025-02-11:12:23:27,077 INFO     [influxdb.py:50] Processing entry: {'jitter': '0.006', 'packetLoss': '0', 'throughput': 130.0, 'timestamp': 1739276599.994788}
+2025-02-11:12:23:27,083 INFO     [influxdb.py:68] Wrote point: network_metrics jitter_ms=0.01,packetLoss_percent=0,throughput_Mbps=0 1739276599994787840
+2025-02-11:12:23:27,083 INFO     [influxdb.py:73] Data written to InfluxDB successfully.
+2025-02-11:12:25:08,559 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:25:10,508 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:28:13,890 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:28:30,600 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:12:28:30,641 INFO     [app_routers.py:63] Client Conf: {'-b': '500M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:12:28:44,667 INFO     [influxdb.py:39] Attempting to write data to InfluxDB: {'results': [{'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276910.627956}, {'jitter': '0.001', 'packetLoss': '0.18', 'throughput': 523.0, 'timestamp': 1739276911.627956}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276912.627956}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276913.627956}, {'jitter': '0.001', 'packetLoss': '0.19', 'throughput': 523.0, 'timestamp': 1739276914.627956}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276915.627956}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276916.627956}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276917.627956}], 'Status': 'Success'}]}
+2025-02-11:12:28:44,667 INFO     [influxdb.py:41] Processing result: {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276910.627956}, {'jitter': '0.001', 'packetLoss': '0.18', 'throughput': 523.0, 'timestamp': 1739276911.627956}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276912.627956}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276913.627956}, {'jitter': '0.001', 'packetLoss': '0.19', 'throughput': 523.0, 'timestamp': 1739276914.627956}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276915.627956}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276916.627956}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276917.627956}], 'Status': 'Success'}
+2025-02-11:12:28:44,667 INFO     [influxdb.py:45] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276910.627956}
+2025-02-11:12:28:44,677 INFO     [influxdb.py:67] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=524 1739276910627955968
+2025-02-11:12:28:44,677 INFO     [influxdb.py:45] Processing entry: {'jitter': '0.001', 'packetLoss': '0.18', 'throughput': 523.0, 'timestamp': 1739276911.627956}
+2025-02-11:12:28:44,683 INFO     [influxdb.py:67] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=18,throughput_Mbps=523 1739276911627955968
+2025-02-11:12:28:44,683 INFO     [influxdb.py:45] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276912.627956}
+2025-02-11:12:28:44,687 INFO     [influxdb.py:67] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=524 1739276912627955968
+2025-02-11:12:28:44,688 INFO     [influxdb.py:45] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276913.627956}
+2025-02-11:12:28:44,692 INFO     [influxdb.py:67] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=524 1739276913627955968
+2025-02-11:12:28:44,692 INFO     [influxdb.py:45] Processing entry: {'jitter': '0.001', 'packetLoss': '0.19', 'throughput': 523.0, 'timestamp': 1739276914.627956}
+2025-02-11:12:28:44,696 INFO     [influxdb.py:67] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=19,throughput_Mbps=523 1739276914627955968
+2025-02-11:12:28:44,696 INFO     [influxdb.py:45] Processing entry: {'jitter': '0.000', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276915.627956}
+2025-02-11:12:28:44,700 INFO     [influxdb.py:67] Wrote point: network_metrics jitter_ms=0,packetLoss_percent=0,throughput_Mbps=524 1739276915627955968
+2025-02-11:12:28:44,700 INFO     [influxdb.py:45] Processing entry: {'jitter': '0.000', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276916.627956}
+2025-02-11:12:28:44,703 INFO     [influxdb.py:67] Wrote point: network_metrics jitter_ms=0,packetLoss_percent=0,throughput_Mbps=524 1739276916627955968
+2025-02-11:12:28:44,703 INFO     [influxdb.py:45] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739276917.627956}
+2025-02-11:12:28:44,707 INFO     [influxdb.py:67] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=524 1739276917627955968
+2025-02-11:12:28:44,707 INFO     [influxdb.py:72] Data written to InfluxDB successfully.
+2025-02-11:12:35:18,900 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:35:23,134 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:12:35:23,170 INFO     [app_routers.py:63] Client Conf: {'-b': '500M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:12:35:37,199 INFO     [influxdb.py:21] Attempting to write data to InfluxDB: {'results': [{'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.002', 'packetLoss': '0.15', 'throughput': 524.0, 'timestamp': 1739277323.159156}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277324.159156}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277325.159156}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277326.159156}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277327.159156}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277328.159156}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277329.159156}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277330.159156}], 'Status': 'Success'}]}
+2025-02-11:12:35:37,199 INFO     [influxdb.py:23] Processing result: {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.002', 'packetLoss': '0.15', 'throughput': 524.0, 'timestamp': 1739277323.159156}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277324.159156}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277325.159156}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277326.159156}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277327.159156}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277328.159156}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277329.159156}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277330.159156}], 'Status': 'Success'}
+2025-02-11:12:35:37,199 INFO     [influxdb.py:27] Processing entry: {'jitter': '0.002', 'packetLoss': '0.15', 'throughput': 524.0, 'timestamp': 1739277323.159156}
+2025-02-11:12:35:37,215 INFO     [influxdb.py:52] Wrote point: network_metrics jitter_ms=2,packetLoss_percent=15,throughput_Mbps=524 1739277323159155968
+2025-02-11:12:35:37,216 INFO     [influxdb.py:27] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277324.159156}
+2025-02-11:12:35:37,222 INFO     [influxdb.py:52] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=524 1739277324159155968
+2025-02-11:12:35:37,222 INFO     [influxdb.py:27] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277325.159156}
+2025-02-11:12:35:37,228 INFO     [influxdb.py:52] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=524 1739277325159155968
+2025-02-11:12:35:37,230 INFO     [influxdb.py:27] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277326.159156}
+2025-02-11:12:35:37,234 INFO     [influxdb.py:52] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=524 1739277326159155968
+2025-02-11:12:35:37,235 INFO     [influxdb.py:27] Processing entry: {'jitter': '0.002', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277327.159156}
+2025-02-11:12:35:37,239 INFO     [influxdb.py:52] Wrote point: network_metrics jitter_ms=2,packetLoss_percent=0,throughput_Mbps=524 1739277327159155968
+2025-02-11:12:35:37,239 INFO     [influxdb.py:27] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277328.159156}
+2025-02-11:12:35:37,243 INFO     [influxdb.py:52] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=524 1739277328159155968
+2025-02-11:12:35:37,243 INFO     [influxdb.py:27] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277329.159156}
+2025-02-11:12:35:37,247 INFO     [influxdb.py:52] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=524 1739277329159155968
+2025-02-11:12:35:37,247 INFO     [influxdb.py:27] Processing entry: {'jitter': '0.002', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739277330.159156}
+2025-02-11:12:35:37,251 INFO     [influxdb.py:52] Wrote point: network_metrics jitter_ms=2,packetLoss_percent=0,throughput_Mbps=524 1739277330159155968
+2025-02-11:12:35:37,251 INFO     [influxdb.py:57] Data written to InfluxDB successfully.
+2025-02-11:12:36:55,990 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:12:36:56,026 INFO     [app_routers.py:63] Client Conf: {'-b': '1G', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:12:37:10,052 INFO     [influxdb.py:21] Attempting to write data to InfluxDB: {'results': [{'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277416.012344}, {'jitter': '0.001', 'packetLoss': '0.78', 'throughput': 1066.0, 'timestamp': 1739277417.012344}, {'jitter': '0.001', 'packetLoss': '2', 'throughput': 1052.0, 'timestamp': 1739277418.012344}, {'jitter': '0.016', 'packetLoss': '0.038', 'throughput': 1061.0, 'timestamp': 1739277419.012344}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1086.0, 'timestamp': 1739277420.012344}, {'jitter': '0.002', 'packetLoss': '0.18', 'throughput': 1072.0, 'timestamp': 1739277421.012344}, {'jitter': '0.002', 'packetLoss': '0.038', 'throughput': 1073.0, 'timestamp': 1739277422.012344}, {'jitter': '0.003', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277423.012344}], 'Status': 'Success'}]}
+2025-02-11:12:37:10,052 INFO     [influxdb.py:23] Processing result: {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277416.012344}, {'jitter': '0.001', 'packetLoss': '0.78', 'throughput': 1066.0, 'timestamp': 1739277417.012344}, {'jitter': '0.001', 'packetLoss': '2', 'throughput': 1052.0, 'timestamp': 1739277418.012344}, {'jitter': '0.016', 'packetLoss': '0.038', 'throughput': 1061.0, 'timestamp': 1739277419.012344}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1086.0, 'timestamp': 1739277420.012344}, {'jitter': '0.002', 'packetLoss': '0.18', 'throughput': 1072.0, 'timestamp': 1739277421.012344}, {'jitter': '0.002', 'packetLoss': '0.038', 'throughput': 1073.0, 'timestamp': 1739277422.012344}, {'jitter': '0.003', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277423.012344}], 'Status': 'Success'}
+2025-02-11:12:37:10,052 INFO     [influxdb.py:27] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277416.012344}
+2025-02-11:12:37:10,061 INFO     [influxdb.py:52] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=1074 1739277416012343808
+2025-02-11:12:37:10,062 INFO     [influxdb.py:27] Processing entry: {'jitter': '0.001', 'packetLoss': '0.78', 'throughput': 1066.0, 'timestamp': 1739277417.012344}
+2025-02-11:12:37:10,068 INFO     [influxdb.py:52] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=78,throughput_Mbps=1066 1739277417012343808
+2025-02-11:12:37:10,068 INFO     [influxdb.py:27] Processing entry: {'jitter': '0.001', 'packetLoss': '2', 'throughput': 1052.0, 'timestamp': 1739277418.012344}
+2025-02-11:12:37:10,072 INFO     [influxdb.py:52] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=200,throughput_Mbps=1052 1739277418012343808
+2025-02-11:12:37:10,073 INFO     [influxdb.py:27] Processing entry: {'jitter': '0.016', 'packetLoss': '0.038', 'throughput': 1061.0, 'timestamp': 1739277419.012344}
+2025-02-11:12:37:10,077 INFO     [influxdb.py:52] Wrote point: network_metrics jitter_ms=16,packetLoss_percent=3.8,throughput_Mbps=1061 1739277419012343808
+2025-02-11:12:37:10,077 INFO     [influxdb.py:27] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1086.0, 'timestamp': 1739277420.012344}
+2025-02-11:12:37:10,080 INFO     [influxdb.py:52] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=1086 1739277420012343808
+2025-02-11:12:37:10,081 INFO     [influxdb.py:27] Processing entry: {'jitter': '0.002', 'packetLoss': '0.18', 'throughput': 1072.0, 'timestamp': 1739277421.012344}
+2025-02-11:12:37:10,084 INFO     [influxdb.py:52] Wrote point: network_metrics jitter_ms=2,packetLoss_percent=18,throughput_Mbps=1072 1739277421012343808
+2025-02-11:12:37:10,084 INFO     [influxdb.py:27] Processing entry: {'jitter': '0.002', 'packetLoss': '0.038', 'throughput': 1073.0, 'timestamp': 1739277422.012344}
+2025-02-11:12:37:10,088 INFO     [influxdb.py:52] Wrote point: network_metrics jitter_ms=2,packetLoss_percent=3.8,throughput_Mbps=1073 1739277422012343808
+2025-02-11:12:37:10,089 INFO     [influxdb.py:27] Processing entry: {'jitter': '0.003', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277423.012344}
+2025-02-11:12:37:10,092 INFO     [influxdb.py:52] Wrote point: network_metrics jitter_ms=3,packetLoss_percent=0,throughput_Mbps=1074 1739277423012343808
+2025-02-11:12:37:10,092 INFO     [influxdb.py:57] Data written to InfluxDB successfully.
+2025-02-11:12:40:51,050 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:41:25,356 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:41:41,267 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:12:41:54,595 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:12:41:54,634 INFO     [app_routers.py:63] Client Conf: {'-b': '1G', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:12:42:08,661 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:12:42:08,687 INFO     [app_routers.py:63] Client Conf: {'-b': '1G', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:12:42:22,712 INFO     [influxdb.py:20] Attempting to write data to InfluxDB: {'results': [{'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0.059', 'throughput': 1073.0, 'timestamp': 1739277714.620063}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277715.620063}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277716.620063}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277717.620063}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277718.620063}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277719.620063}, {'jitter': '0.002', 'packetLoss': '0.0044', 'throughput': 1074.0, 'timestamp': 1739277720.620063}, {'jitter': '0.001', 'packetLoss': '0.089', 'throughput': 1073.0, 'timestamp': 1739277721.620063}], 'Status': 'Success'}, {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277728.67494}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277729.67494}, {'jitter': '0.001', 'packetLoss': '0.0099', 'throughput': 1074.0, 'timestamp': 1739277730.67494}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277731.67494}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277732.67494}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277733.67494}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277734.67494}, {'jitter': '0.001', 'packetLoss': '0.019', 'throughput': 1073.0, 'timestamp': 1739277735.67494}], 'Status': 'Success'}]}
+2025-02-11:12:42:22,713 INFO     [influxdb.py:22] Processing result: {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0.059', 'throughput': 1073.0, 'timestamp': 1739277714.620063}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277715.620063}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277716.620063}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277717.620063}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277718.620063}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277719.620063}, {'jitter': '0.002', 'packetLoss': '0.0044', 'throughput': 1074.0, 'timestamp': 1739277720.620063}, {'jitter': '0.001', 'packetLoss': '0.089', 'throughput': 1073.0, 'timestamp': 1739277721.620063}], 'Status': 'Success'}
+2025-02-11:12:42:22,713 INFO     [influxdb.py:26] Processing entry: {'jitter': '0.001', 'packetLoss': '0.059', 'throughput': 1073.0, 'timestamp': 1739277714.620063}
+2025-02-11:12:42:22,721 INFO     [influxdb.py:42] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=5.9,throughput_Mbps=1073 1739277714620062976
+2025-02-11:12:42:22,721 INFO     [influxdb.py:26] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277715.620063}
+2025-02-11:12:42:22,726 INFO     [influxdb.py:42] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=1074 1739277715620062976
+2025-02-11:12:42:22,727 INFO     [influxdb.py:26] Processing entry: {'jitter': '0.002', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277716.620063}
+2025-02-11:12:42:22,731 INFO     [influxdb.py:42] Wrote point: network_metrics jitter_ms=2,packetLoss_percent=0,throughput_Mbps=1074 1739277716620062976
+2025-02-11:12:42:22,731 INFO     [influxdb.py:26] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277717.620063}
+2025-02-11:12:42:22,736 INFO     [influxdb.py:42] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=1074 1739277717620062976
+2025-02-11:12:42:22,736 INFO     [influxdb.py:26] Processing entry: {'jitter': '0.002', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277718.620063}
+2025-02-11:12:42:22,741 INFO     [influxdb.py:42] Wrote point: network_metrics jitter_ms=2,packetLoss_percent=0,throughput_Mbps=1074 1739277718620062976
+2025-02-11:12:42:22,741 INFO     [influxdb.py:26] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277719.620063}
+2025-02-11:12:42:22,745 INFO     [influxdb.py:42] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=1074 1739277719620062976
+2025-02-11:12:42:22,746 INFO     [influxdb.py:26] Processing entry: {'jitter': '0.002', 'packetLoss': '0.0044', 'throughput': 1074.0, 'timestamp': 1739277720.620063}
+2025-02-11:12:42:22,749 INFO     [influxdb.py:42] Wrote point: network_metrics jitter_ms=2,packetLoss_percent=0.44,throughput_Mbps=1074 1739277720620062976
+2025-02-11:12:42:22,749 INFO     [influxdb.py:26] Processing entry: {'jitter': '0.001', 'packetLoss': '0.089', 'throughput': 1073.0, 'timestamp': 1739277721.620063}
+2025-02-11:12:42:22,753 INFO     [influxdb.py:42] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=8.9,throughput_Mbps=1073 1739277721620062976
+2025-02-11:12:42:22,753 INFO     [influxdb.py:22] Processing result: {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277728.67494}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277729.67494}, {'jitter': '0.001', 'packetLoss': '0.0099', 'throughput': 1074.0, 'timestamp': 1739277730.67494}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277731.67494}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277732.67494}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277733.67494}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277734.67494}, {'jitter': '0.001', 'packetLoss': '0.019', 'throughput': 1073.0, 'timestamp': 1739277735.67494}], 'Status': 'Success'}
+2025-02-11:12:42:22,753 INFO     [influxdb.py:26] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277728.67494}
+2025-02-11:12:42:22,757 INFO     [influxdb.py:42] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=1074 1739277728674940160
+2025-02-11:12:42:22,757 INFO     [influxdb.py:26] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277729.67494}
+2025-02-11:12:42:22,760 INFO     [influxdb.py:42] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=1074 1739277729674940160
+2025-02-11:12:42:22,761 INFO     [influxdb.py:26] Processing entry: {'jitter': '0.001', 'packetLoss': '0.0099', 'throughput': 1074.0, 'timestamp': 1739277730.67494}
+2025-02-11:12:42:22,765 INFO     [influxdb.py:42] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0.99,throughput_Mbps=1074 1739277730674940160
+2025-02-11:12:42:22,765 INFO     [influxdb.py:26] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277731.67494}
+2025-02-11:12:42:22,769 INFO     [influxdb.py:42] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=1074 1739277731674940160
+2025-02-11:12:42:22,769 INFO     [influxdb.py:26] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277732.67494}
+2025-02-11:12:42:22,774 INFO     [influxdb.py:42] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=1074 1739277732674940160
+2025-02-11:12:42:22,774 INFO     [influxdb.py:26] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277733.67494}
+2025-02-11:12:42:22,777 INFO     [influxdb.py:42] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=1074 1739277733674940160
+2025-02-11:12:42:22,778 INFO     [influxdb.py:26] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739277734.67494}
+2025-02-11:12:42:22,781 INFO     [influxdb.py:42] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=0,throughput_Mbps=1074 1739277734674940160
+2025-02-11:12:42:22,781 INFO     [influxdb.py:26] Processing entry: {'jitter': '0.001', 'packetLoss': '0.019', 'throughput': 1073.0, 'timestamp': 1739277735.67494}
+2025-02-11:12:42:22,785 INFO     [influxdb.py:42] Wrote point: network_metrics jitter_ms=1,packetLoss_percent=1.9,throughput_Mbps=1073 1739277735674940160
+2025-02-11:12:42:22,785 INFO     [influxdb.py:47] Data written to InfluxDB successfully.
+2025-02-11:13:49:00,611 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:13:49:15,236 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:13:49:15,280 INFO     [app_routers.py:63] Client Conf: {'-b': '1G', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:13:49:29,306 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:13:49:29,336 INFO     [app_routers.py:63] Client Conf: {'-b': '1G', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:13:49:43,364 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:13:49:43,391 INFO     [app_routers.py:63] Client Conf: {'-b': '1G', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:13:49:57,423 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:13:49:57,448 INFO     [app_routers.py:63] Client Conf: {'-b': '1G', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:13:50:11,477 INFO     [influxdb.py:33] Attempting to write data to InfluxDB: {'results': [{'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '1.8', 'throughput': 1055.0, 'timestamp': 1739281755.268038}, {'jitter': '0.002', 'packetLoss': '3.5', 'throughput': 1036.0, 'timestamp': 1739281756.268038}, {'jitter': '0.001', 'packetLoss': '0.041', 'throughput': 1073.0, 'timestamp': 1739281757.268038}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281758.268038}, {'jitter': '0.001', 'packetLoss': '0.18', 'throughput': 1072.0, 'timestamp': 1739281759.268038}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281760.268038}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281761.268038}, {'jitter': '0.001', 'packetLoss': '0.37', 'throughput': 1070.0, 'timestamp': 1739281762.268038}], 'Status': 'Success'}, {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281769.323019}, {'jitter': '0.002', 'packetLoss': '0.31', 'throughput': 1070.0, 'timestamp': 1739281770.323019}, {'jitter': '0.001', 'packetLoss': '0.031', 'throughput': 1073.0, 'timestamp': 1739281771.323019}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281772.323019}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281773.323019}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281774.323019}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 1073.0, 'timestamp': 1739281775.323019}, {'jitter': '0.003', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281776.323019}], 'Status': 'Success'}, {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281783.377658}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281784.377658}, {'jitter': '0.000', 'packetLoss': '0.13', 'throughput': 1073.0, 'timestamp': 1739281785.377658}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281786.377658}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281787.377658}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281788.377658}, {'jitter': '0.000', 'packetLoss': '0.0099', 'throughput': 1074.0, 'timestamp': 1739281789.377658}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281790.377658}], 'Status': 'Success'}, {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281797.435394}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281798.435394}, {'jitter': '0.000', 'packetLoss': '0.0044', 'throughput': 1074.0, 'timestamp': 1739281799.435394}, {'jitter': '0.001', 'packetLoss': '0.078', 'throughput': 1073.0, 'timestamp': 1739281800.435394}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281801.435394}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281802.435394}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281803.435394}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281804.435394}], 'Status': 'Success'}]}
+2025-02-11:13:50:11,477 ERROR    [influxdb.py:37] Expected a list of results, but got: <class 'dict'>
+2025-02-11:13:52:37,970 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:13:52:43,642 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:13:52:43,687 INFO     [app_routers.py:63] Client Conf: {'-b': '1G', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:13:52:57,716 INFO     [influxdb.py:48] Received a single dictionary, converting to a list.
+2025-02-11:13:52:57,716 INFO     [influxdb.py:61] Processing result: {'results': [{'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281963.669446}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281964.669446}, {'jitter': '0.002', 'packetLoss': '0.014', 'throughput': 1073.0, 'timestamp': 1739281965.669446}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281966.669446}, {'jitter': '0.003', 'packetLoss': '0', 'throughput': 1073.0, 'timestamp': 1739281967.669446}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281968.669446}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281969.669446}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281970.669446}], 'Status': 'Success'}]}
+2025-02-11:13:52:57,716 WARNING  [influxdb.py:102] Skipping result as Status is not 'Success': {'results': [{'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281963.669446}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281964.669446}, {'jitter': '0.002', 'packetLoss': '0.014', 'throughput': 1073.0, 'timestamp': 1739281965.669446}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281966.669446}, {'jitter': '0.003', 'packetLoss': '0', 'throughput': 1073.0, 'timestamp': 1739281967.669446}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281968.669446}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281969.669446}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739281970.669446}], 'Status': 'Success'}]}
+2025-02-11:13:52:57,716 INFO     [influxdb.py:104] Data written to InfluxDB successfully.
+2025-02-11:13:53:36,594 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:13:53:36,623 INFO     [app_routers.py:63] Client Conf: {'-b': '1G', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:13:53:50,655 INFO     [influxdb.py:48] Received a single dictionary, converting to a list.
+2025-02-11:13:53:50,655 INFO     [influxdb.py:61] Processing result: {'results': [{'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.002', 'packetLoss': '0.29', 'throughput': 1071.0, 'timestamp': 1739282016.611124}, {'jitter': '0.001', 'packetLoss': '0.034', 'throughput': 1074.0, 'timestamp': 1739282017.611124}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282018.611124}, {'jitter': '0.001', 'packetLoss': '2.9', 'throughput': 1042.0, 'timestamp': 1739282019.611124}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282020.611124}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282021.611124}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282022.611124}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282023.611124}], 'Status': 'Success'}]}
+2025-02-11:13:53:50,655 WARNING  [influxdb.py:102] Skipping result as Status is not 'Success': {'results': [{'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.002', 'packetLoss': '0.29', 'throughput': 1071.0, 'timestamp': 1739282016.611124}, {'jitter': '0.001', 'packetLoss': '0.034', 'throughput': 1074.0, 'timestamp': 1739282017.611124}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282018.611124}, {'jitter': '0.001', 'packetLoss': '2.9', 'throughput': 1042.0, 'timestamp': 1739282019.611124}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282020.611124}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282021.611124}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282022.611124}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282023.611124}], 'Status': 'Success'}]}
+2025-02-11:13:53:50,655 INFO     [influxdb.py:104] Data written to InfluxDB successfully.
+2025-02-11:13:55:15,076 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:13:55:25,410 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:13:55:25,445 INFO     [app_routers.py:63] Client Conf: {'-b': '1G', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:13:55:39,467 INFO     [influxdb.py:60] Processing result: {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '1.6', 'throughput': 1057.0, 'timestamp': 1739282125.433152}, {'jitter': '0.002', 'packetLoss': '2.5', 'throughput': 1047.0, 'timestamp': 1739282126.433152}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282127.433152}, {'jitter': '0.001', 'packetLoss': '1.2', 'throughput': 1060.0, 'timestamp': 1739282128.433152}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282129.433152}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1073.0, 'timestamp': 1739282130.433152}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1075.0, 'timestamp': 1739282131.433152}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282132.433152}], 'Status': 'Success'}
+2025-02-11:13:55:39,468 INFO     [influxdb.py:69] Processing entry: {'jitter': '0.001', 'packetLoss': '1.6', 'throughput': 1057.0, 'timestamp': 1739282125.433152}
+2025-02-11:13:55:39,479 INFO     [influxdb.py:95] Wrote point: jitter=1.0 ms, packetLoss=160.0 %, throughput=1057.0 Mbps
+2025-02-11:13:55:39,480 INFO     [influxdb.py:69] Processing entry: {'jitter': '0.002', 'packetLoss': '2.5', 'throughput': 1047.0, 'timestamp': 1739282126.433152}
+2025-02-11:13:55:39,485 INFO     [influxdb.py:95] Wrote point: jitter=2.0 ms, packetLoss=250.0 %, throughput=1047.0 Mbps
+2025-02-11:13:55:39,485 INFO     [influxdb.py:69] Processing entry: {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282127.433152}
+2025-02-11:13:55:39,489 INFO     [influxdb.py:95] Wrote point: jitter=0.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:13:55:39,490 INFO     [influxdb.py:69] Processing entry: {'jitter': '0.001', 'packetLoss': '1.2', 'throughput': 1060.0, 'timestamp': 1739282128.433152}
+2025-02-11:13:55:39,494 INFO     [influxdb.py:95] Wrote point: jitter=1.0 ms, packetLoss=120.0 %, throughput=1060.0 Mbps
+2025-02-11:13:55:39,494 INFO     [influxdb.py:69] Processing entry: {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282129.433152}
+2025-02-11:13:55:39,499 INFO     [influxdb.py:95] Wrote point: jitter=0.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:13:55:39,499 INFO     [influxdb.py:69] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1073.0, 'timestamp': 1739282130.433152}
+2025-02-11:13:55:39,503 INFO     [influxdb.py:95] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=1073.0 Mbps
+2025-02-11:13:55:39,503 INFO     [influxdb.py:69] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1075.0, 'timestamp': 1739282131.433152}
+2025-02-11:13:55:39,507 INFO     [influxdb.py:95] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=1075.0 Mbps
+2025-02-11:13:55:39,508 INFO     [influxdb.py:69] Processing entry: {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282132.433152}
+2025-02-11:13:55:39,511 INFO     [influxdb.py:95] Wrote point: jitter=0.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:13:55:39,511 INFO     [influxdb.py:103] Data written to InfluxDB successfully.
+2025-02-11:14:00:36,663 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:14:00:37,613 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:14:00:37,652 INFO     [app_routers.py:63] Client Conf: {'-b': '1G', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:14:00:51,682 INFO     [influxdb.py:55] Processing result: {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282437.63735}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282438.63735}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282439.63735}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282440.63735}, {'jitter': '0.000', 'packetLoss': '0.25', 'throughput': 1071.0, 'timestamp': 1739282441.63735}, {'jitter': '0.000', 'packetLoss': '3.8', 'throughput': 1033.0, 'timestamp': 1739282442.63735}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282443.63735}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282444.63735}], 'Status': 'Success'}
+2025-02-11:14:00:51,682 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282437.63735}
+2025-02-11:14:00:51,691 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:00:51,691 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282438.63735}
+2025-02-11:14:00:51,698 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:00:51,698 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282439.63735}
+2025-02-11:14:00:51,703 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:00:51,703 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282440.63735}
+2025-02-11:14:00:51,709 INFO     [influxdb.py:90] Wrote point: jitter=0.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:00:51,709 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.000', 'packetLoss': '0.25', 'throughput': 1071.0, 'timestamp': 1739282441.63735}
+2025-02-11:14:00:51,713 INFO     [influxdb.py:90] Wrote point: jitter=0.0 ms, packetLoss=0.25 %, throughput=1071.0 Mbps
+2025-02-11:14:00:51,713 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.000', 'packetLoss': '3.8', 'throughput': 1033.0, 'timestamp': 1739282442.63735}
+2025-02-11:14:00:51,718 INFO     [influxdb.py:90] Wrote point: jitter=0.0 ms, packetLoss=3.8 %, throughput=1033.0 Mbps
+2025-02-11:14:00:51,718 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282443.63735}
+2025-02-11:14:00:51,722 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:00:51,723 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739282444.63735}
+2025-02-11:14:00:51,727 INFO     [influxdb.py:90] Wrote point: jitter=0.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:00:51,727 INFO     [influxdb.py:98] Data written to InfluxDB successfully.
+2025-02-11:14:03:01,132 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:14:03:01,174 INFO     [app_routers.py:63] Client Conf: {'-b': '50M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:14:03:15,203 INFO     [influxdb.py:55] Processing result: {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.002', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739282581.154672}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739282582.154672}, {'jitter': '0.004', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739282583.154672}, {'jitter': '0.006', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739282584.154672}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739282585.154672}, {'jitter': '0.005', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739282586.154672}, {'jitter': '0.006', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739282587.154672}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739282588.154672}], 'Status': 'Success'}
+2025-02-11:14:03:15,203 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.002', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739282581.154672}
+2025-02-11:14:03:15,220 INFO     [influxdb.py:90] Wrote point: jitter=2.0 ms, packetLoss=0.0 %, throughput=52.4 Mbps
+2025-02-11:14:03:15,220 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.002', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739282582.154672}
+2025-02-11:14:03:15,225 INFO     [influxdb.py:90] Wrote point: jitter=2.0 ms, packetLoss=0.0 %, throughput=52.4 Mbps
+2025-02-11:14:03:15,225 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.004', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739282583.154672}
+2025-02-11:14:03:15,230 INFO     [influxdb.py:90] Wrote point: jitter=4.0 ms, packetLoss=0.0 %, throughput=52.4 Mbps
+2025-02-11:14:03:15,230 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.006', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739282584.154672}
+2025-02-11:14:03:15,235 INFO     [influxdb.py:90] Wrote point: jitter=6.0 ms, packetLoss=0.0 %, throughput=52.4 Mbps
+2025-02-11:14:03:15,235 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739282585.154672}
+2025-02-11:14:03:15,239 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=52.4 Mbps
+2025-02-11:14:03:15,239 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.005', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739282586.154672}
+2025-02-11:14:03:15,243 INFO     [influxdb.py:90] Wrote point: jitter=5.0 ms, packetLoss=0.0 %, throughput=52.4 Mbps
+2025-02-11:14:03:15,244 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.006', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739282587.154672}
+2025-02-11:14:03:15,248 INFO     [influxdb.py:90] Wrote point: jitter=6.0 ms, packetLoss=0.0 %, throughput=52.4 Mbps
+2025-02-11:14:03:15,248 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 52.4, 'timestamp': 1739282588.154672}
+2025-02-11:14:03:15,252 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=52.4 Mbps
+2025-02-11:14:03:15,252 INFO     [influxdb.py:98] Data written to InfluxDB successfully.
+2025-02-11:14:03:28,907 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:14:03:28,936 INFO     [app_routers.py:63] Client Conf: {'-b': '500M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:14:03:42,967 INFO     [influxdb.py:55] Processing result: {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739282608.924286}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739282609.924286}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739282610.924286}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739282611.924286}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 525.0, 'timestamp': 1739282612.924286}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739282613.924286}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739282614.924286}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739282615.924286}], 'Status': 'Success'}
+2025-02-11:14:03:42,967 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739282608.924286}
+2025-02-11:14:03:42,976 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=524.0 Mbps
+2025-02-11:14:03:42,977 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739282609.924286}
+2025-02-11:14:03:42,982 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=524.0 Mbps
+2025-02-11:14:03:42,982 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739282610.924286}
+2025-02-11:14:03:42,987 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=524.0 Mbps
+2025-02-11:14:03:42,987 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739282611.924286}
+2025-02-11:14:03:42,991 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=524.0 Mbps
+2025-02-11:14:03:42,991 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 525.0, 'timestamp': 1739282612.924286}
+2025-02-11:14:03:42,996 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=525.0 Mbps
+2025-02-11:14:03:42,996 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.002', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739282613.924286}
+2025-02-11:14:03:43,000 INFO     [influxdb.py:90] Wrote point: jitter=2.0 ms, packetLoss=0.0 %, throughput=524.0 Mbps
+2025-02-11:14:03:43,000 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739282614.924286}
+2025-02-11:14:03:43,004 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=524.0 Mbps
+2025-02-11:14:03:43,004 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 524.0, 'timestamp': 1739282615.924286}
+2025-02-11:14:03:43,008 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=524.0 Mbps
+2025-02-11:14:03:43,009 INFO     [influxdb.py:98] Data written to InfluxDB successfully.
+2025-02-11:14:03:57,268 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:14:03:57,299 INFO     [app_routers.py:63] Client Conf: {'-b': '800M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:14:04:11,325 INFO     [influxdb.py:55] Processing result: {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.000', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739282637.286461}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739282638.286461}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739282639.286461}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739282640.286461}, {'jitter': '0.001', 'packetLoss': '0.055', 'throughput': 838.0, 'timestamp': 1739282641.286461}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739282642.286461}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739282643.286461}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739282644.286461}], 'Status': 'Success'}
+2025-02-11:14:04:11,325 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.000', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739282637.286461}
+2025-02-11:14:04:11,331 INFO     [influxdb.py:90] Wrote point: jitter=0.0 ms, packetLoss=0.0 %, throughput=839.0 Mbps
+2025-02-11:14:04:11,331 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739282638.286461}
+2025-02-11:14:04:11,336 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=839.0 Mbps
+2025-02-11:14:04:11,337 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.000', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739282639.286461}
+2025-02-11:14:04:11,341 INFO     [influxdb.py:90] Wrote point: jitter=0.0 ms, packetLoss=0.0 %, throughput=839.0 Mbps
+2025-02-11:14:04:11,342 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.002', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739282640.286461}
+2025-02-11:14:04:11,346 INFO     [influxdb.py:90] Wrote point: jitter=2.0 ms, packetLoss=0.0 %, throughput=839.0 Mbps
+2025-02-11:14:04:11,346 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0.055', 'throughput': 838.0, 'timestamp': 1739282641.286461}
+2025-02-11:14:04:11,351 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.055 %, throughput=838.0 Mbps
+2025-02-11:14:04:11,351 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739282642.286461}
+2025-02-11:14:04:11,355 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=839.0 Mbps
+2025-02-11:14:04:11,356 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739282643.286461}
+2025-02-11:14:04:11,360 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=839.0 Mbps
+2025-02-11:14:04:11,361 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.002', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739282644.286461}
+2025-02-11:14:04:11,365 INFO     [influxdb.py:90] Wrote point: jitter=2.0 ms, packetLoss=0.0 %, throughput=839.0 Mbps
+2025-02-11:14:04:11,366 INFO     [influxdb.py:98] Data written to InfluxDB successfully.
+2025-02-11:14:14:35,806 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:14:14:35,833 INFO     [app_routers.py:63] Client Conf: {'-b': '800M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:14:14:49,864 INFO     [influxdb.py:55] Processing result: {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0.0014', 'throughput': 839.0, 'timestamp': 1739283275.821198}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283276.821198}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283277.821198}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283278.821198}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283279.821198}, {'jitter': '0.002', 'packetLoss': '0.0084', 'throughput': 839.0, 'timestamp': 1739283280.821198}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283281.821198}, {'jitter': '0.002', 'packetLoss': '0.29', 'throughput': 837.0, 'timestamp': 1739283282.821198}], 'Status': 'Success'}
+2025-02-11:14:14:49,868 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0.0014', 'throughput': 839.0, 'timestamp': 1739283275.821198}
+2025-02-11:14:14:49,876 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.001 %, throughput=839.0 Mbps
+2025-02-11:14:14:49,876 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283276.821198}
+2025-02-11:14:14:49,881 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=839.0 Mbps
+2025-02-11:14:14:49,881 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283277.821198}
+2025-02-11:14:14:49,887 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=839.0 Mbps
+2025-02-11:14:14:49,887 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283278.821198}
+2025-02-11:14:14:49,893 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=839.0 Mbps
+2025-02-11:14:14:49,894 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283279.821198}
+2025-02-11:14:14:49,899 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=839.0 Mbps
+2025-02-11:14:14:49,899 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.002', 'packetLoss': '0.0084', 'throughput': 839.0, 'timestamp': 1739283280.821198}
+2025-02-11:14:14:49,903 INFO     [influxdb.py:90] Wrote point: jitter=2.0 ms, packetLoss=0.008 %, throughput=839.0 Mbps
+2025-02-11:14:14:49,903 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.002', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283281.821198}
+2025-02-11:14:14:49,908 INFO     [influxdb.py:90] Wrote point: jitter=2.0 ms, packetLoss=0.0 %, throughput=839.0 Mbps
+2025-02-11:14:14:49,908 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.002', 'packetLoss': '0.29', 'throughput': 837.0, 'timestamp': 1739283282.821198}
+2025-02-11:14:14:49,913 INFO     [influxdb.py:90] Wrote point: jitter=2.0 ms, packetLoss=0.29 %, throughput=837.0 Mbps
+2025-02-11:14:14:49,913 INFO     [influxdb.py:98] Data written to InfluxDB successfully.
+2025-02-11:14:21:04,973 INFO     [main.py:12] **iPerf network performance orchestrator started**
+2025-02-11:14:21:06,346 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:14:21:06,386 INFO     [app_routers.py:63] Client Conf: {'-b': '800M', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:14:21:20,415 INFO     [influxdb.py:55] Processing result: {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.002', 'packetLoss': '0.017', 'throughput': 839.0, 'timestamp': 1739283666.37042}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283667.37042}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283668.37042}, {'jitter': '0.001', 'packetLoss': '0.029', 'throughput': 839.0, 'timestamp': 1739283669.37042}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283670.37042}, {'jitter': '0.001', 'packetLoss': '0.29', 'throughput': 836.0, 'timestamp': 1739283671.37042}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283672.37042}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283673.37042}], 'Status': 'Success'}
+2025-02-11:14:21:20,415 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.002', 'packetLoss': '0.017', 'throughput': 839.0, 'timestamp': 1739283666.37042}
+2025-02-11:14:21:20,425 INFO     [influxdb.py:90] Wrote point: jitter=2.0 ms, packetLoss=1.7 %, throughput=839.0 Mbps
+2025-02-11:14:21:20,425 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283667.37042}
+2025-02-11:14:21:20,431 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=839.0 Mbps
+2025-02-11:14:21:20,431 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283668.37042}
+2025-02-11:14:21:20,435 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=839.0 Mbps
+2025-02-11:14:21:20,435 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0.029', 'throughput': 839.0, 'timestamp': 1739283669.37042}
+2025-02-11:14:21:20,440 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=2.9 %, throughput=839.0 Mbps
+2025-02-11:14:21:20,440 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283670.37042}
+2025-02-11:14:21:20,444 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=839.0 Mbps
+2025-02-11:14:21:20,444 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0.29', 'throughput': 836.0, 'timestamp': 1739283671.37042}
+2025-02-11:14:21:20,448 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=29.0 %, throughput=836.0 Mbps
+2025-02-11:14:21:20,448 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283672.37042}
+2025-02-11:14:21:20,452 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=839.0 Mbps
+2025-02-11:14:21:20,453 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 839.0, 'timestamp': 1739283673.37042}
+2025-02-11:14:21:20,456 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=839.0 Mbps
+2025-02-11:14:21:20,457 INFO     [influxdb.py:98] Data written to InfluxDB successfully.
+2025-02-11:14:26:26,561 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:14:26:26,593 INFO     [app_routers.py:63] Client Conf: {'-b': '1G', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:14:26:40,627 INFO     [app_routers.py:47] Server Conf: {'-i': 1, '-t': 10, '-u': '', '-s': ''}
+2025-02-11:14:26:40,675 INFO     [app_routers.py:63] Client Conf: {'-b': '1G', '-i': 1, '-t': 8, '-u': '', '-c': 'iperf-server:5000'}
+2025-02-11:14:26:54,708 INFO     [influxdb.py:55] Processing result: {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739283986.58058}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739283987.58058}, {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739283988.58058}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739283989.58058}, {'jitter': '0.000', 'packetLoss': '0.038', 'throughput': 1073.0, 'timestamp': 1739283990.58058}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739283991.58058}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739283992.58058}, {'jitter': '0.004', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739283993.58058}], 'Status': 'Success'}
+2025-02-11:14:26:54,708 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739283986.58058}
+2025-02-11:14:26:54,716 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:26:54,716 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739283987.58058}
+2025-02-11:14:26:54,721 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:26:54,721 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.000', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739283988.58058}
+2025-02-11:14:26:54,726 INFO     [influxdb.py:90] Wrote point: jitter=0.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:26:54,726 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739283989.58058}
+2025-02-11:14:26:54,730 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:26:54,730 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.000', 'packetLoss': '0.038', 'throughput': 1073.0, 'timestamp': 1739283990.58058}
+2025-02-11:14:26:54,734 INFO     [influxdb.py:90] Wrote point: jitter=0.0 ms, packetLoss=3.8 %, throughput=1073.0 Mbps
+2025-02-11:14:26:54,734 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739283991.58058}
+2025-02-11:14:26:54,738 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:26:54,738 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739283992.58058}
+2025-02-11:14:26:54,742 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:26:54,742 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.004', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739283993.58058}
+2025-02-11:14:26:54,746 INFO     [influxdb.py:90] Wrote point: jitter=4.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:26:54,746 INFO     [influxdb.py:55] Processing result: {'Message': 'Successfully retrieved last json result', 'Result': [{'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739284000.654721}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739284001.654721}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739284002.654721}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739284003.654721}, {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739284004.654721}, {'jitter': '0.001', 'packetLoss': '0.24', 'throughput': 1071.0, 'timestamp': 1739284005.654721}, {'jitter': '0.002', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739284006.654721}, {'jitter': '0.001', 'packetLoss': '0.18', 'throughput': 1072.0, 'timestamp': 1739284007.654721}], 'Status': 'Success'}
+2025-02-11:14:26:54,746 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739284000.654721}
+2025-02-11:14:26:54,750 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:26:54,750 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739284001.654721}
+2025-02-11:14:26:54,754 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:26:54,754 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739284002.654721}
+2025-02-11:14:26:54,758 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:26:54,758 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739284003.654721}
+2025-02-11:14:26:54,762 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:26:54,762 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739284004.654721}
+2025-02-11:14:26:54,766 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:26:54,766 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0.24', 'throughput': 1071.0, 'timestamp': 1739284005.654721}
+2025-02-11:14:26:54,769 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=24.0 %, throughput=1071.0 Mbps
+2025-02-11:14:26:54,769 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.002', 'packetLoss': '0', 'throughput': 1074.0, 'timestamp': 1739284006.654721}
+2025-02-11:14:26:54,773 INFO     [influxdb.py:90] Wrote point: jitter=2.0 ms, packetLoss=0.0 %, throughput=1074.0 Mbps
+2025-02-11:14:26:54,773 INFO     [influxdb.py:64] Processing entry: {'jitter': '0.001', 'packetLoss': '0.18', 'throughput': 1072.0, 'timestamp': 1739284007.654721}
+2025-02-11:14:26:54,776 INFO     [influxdb.py:90] Wrote point: jitter=1.0 ms, packetLoss=18.0 %, throughput=1072.0 Mbps
+2025-02-11:14:26:54,777 INFO     [influxdb.py:98] Data written to InfluxDB successfully.
+2025-02-11:14:27:29,114 INFO     [main.py:12] **iPerf network performance orchestrator started**
