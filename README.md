@@ -37,6 +37,29 @@ flask run
 The app will start listening for requests on port 5000.
 Press `Control+C` to stop the development server.
 
+## Running with Docker
+
+1. Build the image from the repository root (where the `Dockerfile` is):
+```bash
+docker build -t p4lik4ri/iperf-app:latest .
+```
+2. Run it. Each instance exposes two separate ports: `5000` for the
+   Flask control API, and `5201` (TCP+UDP) for the actual iPerf3 test
+   traffic — they must stay distinct, since iPerf3 always opens a TCP
+   control channel first (even for UDP tests) and would otherwise
+   conflict with Flask's own listener on the same port:
+```bash
+docker run -d --name iperf-app \
+  -p 5000:5000 \
+  -p 5201:5201 \
+  -p 5201:5201/udp \
+  p4lik4ri/iperf-app:latest \
+  flask run -h 0.0.0.0
+```
+Run the same image on both the server and client hosts; which role
+each one plays is decided per-request (see below), not by the
+container itself.
+
 ## Configuration
 
 The iPerfAgent instance can be configured by editing the `config.yml` file. 
@@ -57,6 +80,28 @@ The iPerf Agent exposes a REST API with the following endpoints:
 * `/LastError`: Retrieve the errors of the last execution. Returns a JSON reporting the success of the retrieval and a message informing of the error.
 * `/StartDateTime`: Retrieve the date and time of the last execution. Returns a JSON reporting the success of the retrieval, a message and a list of Errors.
 * `/IsRunning`: Check if there is another execution running. Returns a JSON reporting the success of the check and a message informing if is running or not.
+
+### Running an experiment via network-monitor
+
+In practice you won't call `/Iperf` directly — the `network-monitor`
+service orchestrates both the server and client iPerf Agent instances
+for you. With both agents running (see "Running with Docker" above)
+and `network-monitor` up on port `8000`, start an experiment with:
+```bash
+curl -X POST "http://localhost:8000/start-experiment" \
+     -H "Content-Type: application/json" \
+     -d '{
+         "server_ip": "10.220.2.81:5000",
+         "server_params": "-i 1 -u -s -p 5201",
+         "client_ip": "10.45.112.115:5000",
+         "client_params": "-b 3G -i 1 -u",
+         "duration": 25,
+         "repeat": 1
+     }'
+```
+`server_ip`/`client_ip` are each agent's Flask control API address.
+`-p 5201` in `server_params` sets the actual iPerf3 test port (shown
+explicitly above); it's optional and defaults to `5201` if omitted.
 
 ## Authors
 
