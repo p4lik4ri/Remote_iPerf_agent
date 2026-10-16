@@ -155,25 +155,20 @@ def compile_experiment_data() -> ExperimentData:
     """
     Compile experiment data from environment variables.
     Defaults are used if environment variables are not set.
-    Flags that can be used in iPerf:
-        "--bandwidth": "-b",
+    Flags that can be used in iPerf3:
+        "--bitrate": "-b",
         "--bind": "-B",
-        "--client": "-c",  # for iPerf Server
-        "--compatibility": "-C",
-        "--dualtest": "-d",
+        "--client": "-c",
         "--format": "-f",
         "--interval": "-i",
-        "--len": "-l",
-        "--listenport": "-L",
-        "--print_mss": "-m",
-        "--mss": "-M",
-        "--num": "-n",
-        "--nodelay": "-N",
+        "--length": "-l",
+        "--set-mss": "-M",
+        "--no-delay": "-N",
         "--port": "-p",
-        "--tradeoff": "-r",
+        "--parallel": "-P",
+        "--reverse": "-R",
         "--tos": "-S",
         "--time": "-t",
-        "--ttl": "-T",
         "--udp": "-u",
         "--window": "-w"
     """

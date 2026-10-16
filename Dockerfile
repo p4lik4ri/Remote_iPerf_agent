@@ -6,7 +6,6 @@ WORKDIR /app
 
 # Step 3: Install minimal system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    iperf \
     iperf3 \
     net-tools \
     iputils-ping \
@@ -20,9 +19,9 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Step 6: Expose required ports (Flask and iPerf ports)
-EXPOSE 5000         
-EXPOSE 5001/tcp     
-EXPOSE 5001/udp     
+EXPOSE 5000
+EXPOSE 5201/tcp
+EXPOSE 5201/udp
 
 # Step 7: Run the Flask application
 CMD ["flask", "run", "-h", "0.0.0.0"]

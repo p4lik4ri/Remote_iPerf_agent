@@ -87,27 +87,31 @@ class iPerf:
         # combined "host:port" value for "-c").
         parametersDict = iPerfConfig.splitClientHostPort(parametersDict)
 
-        # Force format to Mbits/sec and interval to 1s if not present
-        parametersDict['-f'] = 'm'
+        isServer = '-c' not in parametersDict.keys()
+
+        # iPerf3 hard-errors if a client-only flag (e.g. "-u"/"-t"/"-w")
+        # is given to the server, or vice versa. Drop anything the
+        # current role doesn't accept instead of failing outright, so
+        # server_params/client_params written in iPerf2's dual-purpose
+        # style (or auto-populated fields like "duration") keep working.
+        parametersDict = iPerfConfig.filterParametersForRole(
+            parametersDict, isServer)
+
+        # Default interval to 1s if not present
         if '-i' not in parametersDict.keys():
             parametersDict['-i'] = '1'
-        interval = int(parametersDict['-i'])
 
-        if '-u' in parametersDict.keys() or '-U' in parametersDict.keys():
-            protocol = 'UDP'
-        else:
-            protocol = 'TCP'
+        # Always request JSON output: this is what parseIperfJsonResult
+        # relies on instead of iPerf2's line-by-line text parsing.
+        parametersDict['-J'] = ''
 
-        if '-P' in parametersDict.keys():
-            # 'P' parameter must be after client host and port, move it to the last key
-            parallelCount = int(parametersDict.pop('-P'))
-            parametersDict['-P'] = str(parallelCount)
-
-            # Even if 'P' is set, iPerf will ignore it when < 2
-            parallelEnabled = (parallelCount > 1)
-        else:
-            parallelCount = 1
-            parallelEnabled = False
+        if isServer:
+            # Unlike iPerf2, iPerf3's server has no "-t" of its own (only
+            # the client controls test duration); instead, "-1" tells the
+            # server to handle exactly one client then exit on its own,
+            # giving each run a clean, self-terminating lifecycle that
+            # doesn't depend on when the client's first packet arrives.
+            parametersDict.setdefault('-1', '')
 
         parameters = []
         for key, value in parametersDict.items():
@@ -118,13 +122,12 @@ class iPerf:
         params = [cls.executable, *parameters]
 
         print(f'Final CLI parameters: {params}')
-        print(f'Protocol: {protocol}; Parallel: {parallelEnabled} (Count: {parallelCount}); Interval: {interval}')
 
-        Thread(target=cls.async_task, args=(params, protocol, parallelEnabled, interval)).start()
+        Thread(target=cls.async_task, args=(params,)).start()
         return None
 
     @classmethod
-    def stdout(cls, process: subprocess.Popen, protocol: str, parallelEnabled: bool, interval: int):
+    def stdout(cls, process: subprocess.Popen):
         pipe = process.stdout
 
         for line in iter(pipe.readline, b''):
@@ -136,13 +139,10 @@ class iPerf:
             if 'error' in line or 'failed' in line:
                 cls.error.append(line)
 
-            parse = iPerfConfig.parseIperfResult(line, protocol, parallelEnabled, cls.startTime, interval)
-            if parse:
-                cls.rawResult.append(line)
-                cls.jsonResult.append(parse)
+            cls.rawResult.append(line)
 
     @classmethod
-    def async_task(cls, params: List[str], protocol: str, parallelEnabled: bool, interval: int):
+    def async_task(cls, params: List[str]):
         cls.isRunning = True
         cls.rawResult = []
         cls.jsonResult = []
@@ -159,8 +159,14 @@ class iPerf:
                 cls.isServer = True
                 print('Server running')
 
-            cls.stdout(process, protocol, parallelEnabled, interval)
+            cls.stdout(process)
             process.wait()
+
+            # iPerf3 only prints its "-J" JSON report once, after the
+            # process finishes, so it's parsed here from the full
+            # captured output rather than line-by-line while running.
+            cls.jsonResult = iPerfConfig.parseIperfJsonResult(
+                '\n'.join(cls.rawResult), cls.startTime)
         except Exception as e:
             print(f'Error in process: {e}')
         finally:

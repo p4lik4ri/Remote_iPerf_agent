@@ -26,8 +26,9 @@ spec:
             cpu: "250m"
         ports:
         - containerPort: 5000 # Flask REST API (TCP)
-        - containerPort: 5201 # iPerf TCP
-        - containerPort: 5001 # iPerf UDP
+        - containerPort: 5201 # iPerf3 (TCP)
+        - containerPort: 5201 # iPerf3 (UDP)
+          protocol: UDP
 ---
 apiVersion: v1
 kind: Service
@@ -47,8 +48,8 @@ spec:
     nodePort: 30000 # Single NodePort for Flask API
   - name: iperf-udp
     protocol: UDP
-    port: 5001
-    targetPort: 5001 # iPerf UDP
+    port: 5201
+    targetPort: 5201 # iPerf3 UDP
     nodePort: 30002 # Single NodePort for Flask API
 
 

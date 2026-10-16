@@ -3,7 +3,7 @@
 ## Requirements
 
  - [Python 3.7.x](https://www.python.org)
- - [iPerf 2.0.9](https://iperf.fr)
+ - [iPerf 3](https://iperf.fr)
 
 ## Installing (development)
 

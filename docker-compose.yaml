@@ -52,17 +52,49 @@ networks:
     driver: bridge
 
 
-# example request
+# example requests
 # "server_ip" is the single source of truth for the iPerf test's
 # host/port: it's automatically applied as "-c"/"-p" to server_params
 # and client_params, so you never need to repeat it there.
+#
+# NOTE: unlike iPerf2's connectionless UDP, iPerf3 always opens a TCP
+# control channel first (even for UDP tests), so the iPerf port must
+# differ from the Flask control API's own port (5000) to avoid a
+# conflict. Override it explicitly with "-p" in server_params (e.g.
+# "-p 5201", iPerf3's own default) when both run on the same host.
+#
+# UDP test:
 # curl -X POST "http://localhost:8000/start-experiment" \
 #      -H "Content-Type: application/json" \
 #      -d '{
 #          "server_ip": "iperf-server:5000",
-#          "server_params": "-i 1 -u -s",
+#          "server_params": "-i 1 -u -s -p 5201",
 #          "client_ip": "iperf-client:5000",
 #          "client_params": "-b 1G -i 1 -u",
+#          "duration": 20,
+#          "repeat": 1
+#      }'
+#
+# TCP test:
+# curl -X POST "http://localhost:8000/start-experiment" \
+#      -H "Content-Type: application/json" \
+#      -d '{
+#          "server_ip": "iperf-server:5000",
+#          "server_params": "-i 1 -s -p 5201",
+#          "client_ip": "iperf-client:5000",
+#          "client_params": "-i 1",
+#          "duration": 20,
+#          "repeat": 1
+#      }'
+#
+# Reverse mode (server sends, client receives/measures):
+# curl -X POST "http://localhost:8000/start-experiment" \
+#      -H "Content-Type: application/json" \
+#      -d '{
+#          "server_ip": "iperf-server:5000",
+#          "server_params": "-i 1 -u -s -p 5201",
+#          "client_ip": "iperf-client:5000",
+#          "client_params": "-b 1G -i 1 -u -R",
 #          "duration": 20,
 #          "repeat": 1
 #      }'

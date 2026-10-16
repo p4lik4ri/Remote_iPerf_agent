@@ -1,30 +1,41 @@
-import re
+import json
 from typing import List, Dict
 from datetime import datetime, timedelta
 
 
 class iPerfConfig:
+    # iPerf3's long-option names (several differ in meaning from iPerf2's,
+    # e.g. "-T"/"-C"/"-L" map to different flags entirely between the two
+    # tools, so this table intentionally only reflects iPerf3's own CLI).
     longParameters = {
-        "--bandwidth": "-b",
-        "--bind": "-B",
-        "--client": "-c",  # for iPerf Server
-        "--compatibility": "-C",
-        "--dualtest": "-d",
+        "--port": "-p",
         "--format": "-f",
         "--interval": "-i",
-        "--len": "-l",
-        "--listenport": "-L",
-        "--print_mss": "-m",
-        "--mss": "-M",
-        "--num": "-n",
-        "--nodelay": "-N",
-        "--port": "-p",
-        "--tradeoff": "-r",
-        "--tos": "-S",
-        "--time": "-t",
-        "--ttl": "-T",
+        "--bind": "-B",
+        "--json": "-J",
+        "--server": "-s",
+        "--daemon": "-D",
+        "--one-off": "-1",
+        "--client": "-c",
         "--udp": "-u",
-        "--window": "-w"
+        "--bitrate": "-b",
+        "--time": "-t",
+        "--bytes": "-n",
+        "--blockcount": "-k",
+        "--length": "-l",
+        "--parallel": "-P",
+        "--reverse": "-R",
+        "--window": "-w",
+        "--congestion": "-C",
+        "--set-mss": "-M",
+        "--no-delay": "-N",
+        "--version4": "-4",
+        "--version6": "-6",
+        "--tos": "-S",
+        "--flowlabel": "-L",
+        "--zerocopy": "-Z",
+        "--omit": "-O",
+        "--title": "-T",
     }
 
     @classmethod
@@ -77,38 +88,101 @@ class iPerfConfig:
 
         return parameters
 
+    # Unlike iPerf2 (where most flags applied to both roles), iPerf3
+    # rejects a number of flags outright when they're given to the
+    # "wrong" side (e.g. "-u"/"-t"/"-w" are client-only; the server
+    # infers protocol/duration/window from whatever the client sends).
+    # Since this system's own server_params/client_params were written
+    # in iPerf2's dual-purpose style (and "duration" is auto-applied to
+    # both sides as "-t"), server-only invocations are filtered down to
+    # flags iPerf3's server actually accepts instead of erroring out.
+    commonFlags = {
+        '-p', '-f', '-i', '-I', '-F', '-A', '-B', '-V', '-J', '-d', '-v',
+    }
+    serverOnlyFlags = {'-s', '-D', '-1'}
+    clientOnlyFlags = {
+        '-c', '-u', '-t', '-n', '-k', '-l', '-P', '-R', '-w', '-C', '-M',
+        '-N', '-4', '-6', '-S', '-L', '-Z', '-O', '-T',
+    }
+
     @classmethod
-    def parseIperfResult(cls, line: str, protocol: str, parallelEnabled: bool, startTime: datetime, interval: int):
-        print(line)
+    def filterParametersForRole(cls, parameters: Dict, isServer: bool) -> Dict:
+        allowed = cls.commonFlags | (
+            cls.serverOnlyFlags if isServer else cls.clientOnlyFlags)
 
-        pattern = r'\[(.*)] *(\d+(\.\d+)?) *- *(\d+(\.\d+)?) *sec *(\d+(\.\d+)?) *MBytes *(\d+(\.\d+)?) *Mbits/sec(.*)?'
-        udpPattern = r' *(\d+(\.\d+)?) *ms *\d+ */ *\d+ \((\d+(\.\d+)?)%\) *'
-        jsonResult = {}
-        result = re.search(pattern, line)
-        if result:
-            instanceId = str(result.group(1))
-
-            if parallelEnabled and instanceId != 'SUM':
-                return None
-
-            second = int(float(result.group(2)))
-            date = startTime + timedelta(seconds=second)
-            jsonResult['timestamp'] = date.timestamp()
-            jsonResult['throughput'] = float(result.group(8))
-
-            udpResult = re.search(udpPattern, line)
-
-            if protocol == 'UDP' and udpResult:
-                    jsonResult['jitter'] = udpResult.group(1)
-                    jsonResult['packetLoss'] = udpResult.group(3)
+        filtered = {}
+        for key, value in parameters.items():
+            if key in allowed:
+                filtered[key] = value
             else:
-                jsonResult['jitter'] = 0
-                jsonResult['packetLoss'] = 0
+                print(f'Dropping {key} (not valid for '
+                      f'{"server" if isServer else "client"})')
 
-            if float(result.group(4)) - float(result.group(2)) > interval:
-                return None
+        return filtered
+
+    @classmethod
+    def parseIperfJsonResult(cls, rawText: str, startTime: datetime) -> List[Dict]:
+        """
+        Parse iPerf3's "-J" JSON report (captured as the process's full
+        stdout) into the same per-interval shape used throughout this
+        system: {"timestamp", "throughput", "jitter", "packetLoss"},
+        plus "retransmits" for TCP when available.
+
+        iPerf3 only prints its JSON report once, after the test (and
+        any process) finishes, so this is called with the complete
+        captured output rather than parsed line-by-line like iPerf2's
+        text output was.
+        """
+        jsonStart = rawText.find('{')
+        if jsonStart == -1:
+            print('No JSON object found in iPerf3 output')
+            return []
+
+        try:
+            # Use raw_decode (instead of loads) so trailing non-JSON
+            # text is ignored. This happens e.g. when the process is
+            # SIGTERM'd mid-write (as "/Close" does): iPerf3 may still
+            # print extra diagnostic lines after its JSON object.
+            data, _ = json.JSONDecoder().raw_decode(rawText[jsonStart:])
+        except ValueError as e:
+            print(f'Failed to parse iPerf3 JSON output: {e}')
+            return []
+
+        if data.get('error'):
+            print(f'iPerf3 reported an error: {data["error"]}')
+            return []
+
+        protocol = data.get('start', {}) \
+                       .get('test_start', {}) \
+                       .get('protocol', 'TCP')
+
+        results = []
+        for interval in data.get('intervals', []):
+            summary = interval.get('sum')
+            if not summary:
+                continue
+
+            second = int(summary.get('start', 0))
+            timestamp = (startTime + timedelta(seconds=second)).timestamp()
+            throughput = summary.get('bits_per_second', 0) / 1_000_000
+
+            result = {
+                'timestamp': timestamp,
+                'throughput': throughput,
+            }
+
+            # Jitter/loss are only meaningful (and only reported by
+            # iPerf3) on the receiving side of a UDP stream.
+            if protocol == 'UDP' and 'jitter_ms' in summary:
+                result['jitter'] = summary.get('jitter_ms', 0)
+                result['packetLoss'] = summary.get('lost_percent', 0)
             else:
-                return jsonResult
+                result['jitter'] = 0
+                result['packetLoss'] = 0
 
-        return None
+            if protocol == 'TCP' and 'retransmits' in summary:
+                result['retransmits'] = summary['retransmits']
 
+            results.append(result)
+
+        return results
