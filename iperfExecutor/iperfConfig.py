@@ -101,8 +101,8 @@ class iPerfConfig:
     }
     serverOnlyFlags = {'-s', '-D', '-1'}
     clientOnlyFlags = {
-        '-c', '-u', '-t', '-n', '-k', '-l', '-P', '-R', '-w', '-C', '-M',
-        '-N', '-4', '-6', '-S', '-L', '-Z', '-O', '-T',
+        '-c', '-X', '-u', '-b', '-t', '-n', '-k', '-l', '-P', '-R', '-w',
+        '-C', '-M', '-N', '-4', '-6', '-S', '-L', '-Z', '-O', '-T',
     }
 
     @classmethod

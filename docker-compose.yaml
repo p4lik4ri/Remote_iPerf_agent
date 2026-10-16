@@ -18,7 +18,10 @@ services:
   #   command: flask run -h 0.0.0.0
 
   network-monitor:
-    image: p4lik4ri/network-monitor:latest
+    build:
+      context: ./network-monitor
+      dockerfile: Dockerfile
+    # image: p4lik4ri/network-monitor:latest
     container_name: network-monitor
     ports:
       - "8000:8000"  # Map network monitor's port 8000 to host port 8000
